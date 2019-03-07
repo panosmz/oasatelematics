@@ -33,80 +33,80 @@ def webGetLinesWithMLInfo():
 
 
 def webGetRoutes(linecode):
-    query = f'?act=webGetRoutes&p1={linecode}'
+    query = '?act=webGetRoutes&p1={}'.format(linecode)
     return telematics_request(query)
 
 
 def webRouteDetails(routecode):
-    query = f'?act=webRouteDetails&p1={routecode}'
+    query = '?act=webRouteDetails&p1={}'.format(routecode)
     return telematics_request(query)
 
 
 def webGetStops(routecode):
-    query = f'?act=webGetStops&p1={routecode}'
+    query = '?act=webGetStops&p1={}'.format(routecode)
     return telematics_request(query)
 
 
 def webRoutesForStop(stopcode):
-    query = f'?act=webRoutesForStop&p1={stopcode}'
+    query = '?act=webRoutesForStop&p1={}'.format(stopcode)
     return telematics_request(query)
 
 
 def webGetRoutesDetailsAndStops(routecode):
-    query = f'?act=webGetRoutesDetailsAndStops&p1={routecode}'
+    query = '?act=webGetRoutesDetailsAndStops&p1={}'.format(routecode)
     return telematics_request(query)
 
 
 def getStopArrivals(stopcode):
-    query = f'?act=getStopArrivals&p1={stopcode}'
+    query = '?act=getStopArrivals&p1={}'.format(stopcode)
     return telematics_request(query)
 
 
 def getBusLocation(routecode):
-    query = f'?act=getBusLocation&p1={routecode}'
+    query = '?act=getBusLocation&p1={}'.format(routecode)
     return telematics_request(query)
 
 
 def getScheduleDaysMasterline(linecode):
-    query = f'?act=getScheduleDaysMasterline&p1={linecode}'
+    query = '?act=getScheduleDaysMasterline&p1={}'.format(linecode)
     return telematics_request(query)
 
 
 def getLinesAndRoutesForMl(mlcode):
-    query = f'?act=getLinesAndRoutesForMl&p1={mlcode}'
+    query = '?act=getLinesAndRoutesForMl&p1={}'.format(mlcode)
     return telematics_request(query)
 
 
 def getRoutesForLine(linecode):
-    query = f'?act=getRoutesForLine&p1={linecode}'
+    query = '?act=getRoutesForLine&p1={}'.format(linecode)
     return telematics_request(query)
 
 
 def getMLName(mlcode):
-    query = f'?act=getMLName&p1={mlcode}'
+    query = '?act=getMLName&p1={}'.format(mlcode)
     return telematics_request(query)
 
 
 def getLineName(linecode):
-    query = f'?act=getLineName&p1={linecode}'
+    query = '?act=getLineName&p1={}'.format(linecode)
     return telematics_request(query)
 
 
 def getRouteName(routecode):
-    query = f'?act=getRouteName&p1={routecode}'
+    query = '?act=getRouteName&p1={}'.format(routecode)
     return telematics_request(query)
 
 
 def getStopNameAndXY(stopcode):
-    query = f'?act=getStopNameAndXY&p1={stopcode}'
+    query = '?act=getStopNameAndXY&p1={}'.format(stopcode)
     return telematics_request(query)
 
 
 def getSchedLines(mlcode, linecode, sdc_code):
-    query = f'?act=getddSchedLines&p1={mlcode}&p2={sdc_code}&p3={linecode}'
+    query = '?act=getddSchedLines&p1={}&p2={}&p3={}'.format(mlcode, sdc_code, linecode)
     return telematics_request(query)
 
 
 def getClosestStops(lon, lat):
-    query = f'?act=getClosestStops&p1={lon}&p2={lat}'
+    query = '?act=getClosestStops&p1={}&p2={}'.format(lon, lat)
     return telematics_request(query)
