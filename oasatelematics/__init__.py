@@ -110,3 +110,7 @@ def getSchedLines(mlcode, linecode, sdc_code):
 def getClosestStops(lon, lat):
     query = '?act=getClosestStops&p1={}&p2={}'.format(lon, lat)
     return telematics_request(query)
+
+def getDailySchedule(linecode):
+    query = '?act=getDailySchedule&line_code={}'.format(linecode)
+    return telematics_request(query)
