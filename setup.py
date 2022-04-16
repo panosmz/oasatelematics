@@ -7,6 +7,7 @@ setup(
   description = 'Python wrapper for the OASA Telematics API',
   author = 'panosmz',
   author_email = 'p.mazarakis94@gmail.com',
+  install_requires=['requests'],
   url = 'https://github.com/panosmz/oasatelematics',
   download_url = 'https://github.com/panosmz/oasatelematics/archive/v0.3.tar.gz',
   keywords = ['api', 'telematics'],
