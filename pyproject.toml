@@ -1,0 +1,45 @@
+[build-system]
+requires = ["setuptools>=64"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "oasatelematics"
+version = "0.4"
+description = "Python wrapper for the OASA Telematics API"
+readme = "README.md"
+license = "GPL-3.0-only"
+requires-python = ">=3.9"
+authors = [
+    { name = "panosmz", email = "p.mazarakis94@gmail.com" },
+]
+keywords = ["api", "telematics", "oasa", "transit"]
+classifiers = [
+    "Development Status :: 5 - Production/Stable",
+    "Intended Audience :: Developers",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+]
+dependencies = [
+    "requests",
+]
+
+[project.urls]
+Homepage = "https://github.com/panosmz/oasatelematics"
+Repository = "https://github.com/panosmz/oasatelematics"
+
+[project.optional-dependencies]
+dev = ["pytest>=7.0"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+markers = [
+    "integration: hits the real OASA Telematics API (deselect with '-m \"not integration\"')",
+]
+addopts = "-m 'not integration'"
+
+[tool.setuptools]
+packages = ["oasatelematics"]
