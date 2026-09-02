@@ -1,6 +1,7 @@
 # oasatelematics
 
 [![PyPI version](https://img.shields.io/pypi/v/oasatelematics.svg)](https://pypi.org/project/oasatelematics/)
+![PyPI Downloads](https://img.shields.io/pypi/dm/oasatelematics)
 [![Python](https://img.shields.io/pypi/pyversions/oasatelematics.svg)](https://pypi.org/project/oasatelematics/)
 [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)
 
